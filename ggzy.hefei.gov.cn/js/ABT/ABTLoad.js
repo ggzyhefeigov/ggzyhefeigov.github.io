@@ -1,0 +1,3 @@
+/*document.write("<script type=\"text/javascript\" src=\"soundmanager2.js\"/*tpa=http://ggzy.hefei.gov.cn/js/ABT/soundmanager2.js*/  charset=\"UTF-8\"></script>");*/
+document.write("<script type=\"text/javascript\" src=\"getText.js\"/*tpa=http://ggzy.hefei.gov.cn/js/ABT/getText.js*/  charset=\"UTF-8\"></script>");
+document.write("<script type=\"text/javascript\" src=\"ABT.js\"/*tpa=http://ggzy.hefei.gov.cn/js/ABT/ABT.js*/ id=\"ABT\" charset=\"UTF-8\"></script>");

@@ -1,0 +1,106 @@
+/*被选中的文本样式*/
+
+::-webkit-selection {
+    background: #000;
+    color: #fff;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #000;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #000;
+    color: #fff;
+    text-shadow: none;
+}
+
+
+.cssSelect {
+    white-space: nowrap;
+    float: left;
+}
+
+.cssSelect * { 
+    display: block;
+}
+
+.cssSelect a {
+    color: #666;
+    outline-width: 0px;
+    text-decoration: none;
+}
+
+.cssSelect .selectBox {
+    cursor: pointer;
+    border: solid 1px #c8c8c8;
+    float: left;
+}
+
+.cssSelect .selectLt {
+    cursor: pointer;
+    float: left;
+    text-align: left;
+}
+
+.cssSelect .selectRt {
+    cursor: pointer;
+    background: url("../images/skin_icons.png")/*tpa=http://ggzy.hefei.gov.cn/images/skin_icons.png*/ -49px -160px no-repeat #f2f2f2;
+    border-left: 1px solid #c8c8c8;
+    float: left
+}
+
+.cssSelect .selectBox {}
+
+.cssSelect .selectLt {
+    overflow: hidden;
+    height: 30px;
+    line-height: 31px;
+    padding: 0 10px;
+    background: none transparent scroll repeat 0% 0%;
+    color: #666;
+}
+
+.cssSelect .selectRt {
+    height: 30px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 28px
+}
+
+.cssSelect .sNormal {
+    background-position: 0px 0px
+}
+
+
+/*.cssSelect .sNormal .selectRt { background-position: 100% 0px}*/
+
+
+.cssSelect .optionsBox {
+    position: absolute;
+    border: 1px solid #dbdbdb;
+    padding: 2px;
+    margin: 0px;
+    background: #fff;
+    z-index: 100;
+}
+
+.cssSelect .optionBox {
+    cursor: pointer;
+    padding: 2px 30px 2px 18px;
+    margin: 0px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.cssSelect .optionBox span {
+    cursor: pointer;
+    font-size: 12px
+}
+
+
+

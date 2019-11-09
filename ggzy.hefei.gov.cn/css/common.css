@@ -1,0 +1,569 @@
+/* yui3 reset.css */
+
+
+html {
+    color: #000;
+    background: #F8F8F8;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+    font-style: normal;
+    font-weight: normal
+}
+
+strong {
+	font-style: normal;
+    font-weight: bold;
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+caption,
+th {
+    text-align: left
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+q:before,
+q:after {
+    content: ''
+}
+
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal
+}
+
+sup {
+    vertical-align: text-top
+}
+
+sub {
+    vertical-align: text-bottom
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    *font-size: 100%
+}
+
+legend {
+    color: #000
+}
+
+iframe {
+    display: block;
+}
+
+
+
+/* yui3 fonts */
+
+body {
+    font: 14px/1.231 "Microsoft YaHei", arial, helvetica, clean, sans-serif;
+    color: #333;
+}
+
+select,
+input,
+button,
+textarea {
+    font: 99% arial, helvetica, clean, sans-serif
+}
+
+table {
+    font-size: inherit;
+    font: 100%
+}
+
+pre,
+code,
+kbd,
+samp,
+tt {
+    font-family: monospace;
+    *font-size: 108%;
+    line-height: 100%
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* utilities */
+.ewb-mian {
+    padding-top: 15px;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.l {
+    float: left !important;
+}
+
+.r {
+    float: right !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.invisible {
+    visibility: hidden !important;
+}
+
+
+
+/** 
+ * 以下可追加项目中的公共样式，
+ * 比如body上进行全局的文字设置（字体，大小，行高），全局a链接的基本状态定义，
+ * 适合页面的栅格系统
+ * 页面公共头尾部分等
+ */
+
+body {
+    min-width: 1200px;
+}
+
+html {
+    background: url("../images/main_bg.jpg")/*tpa=http://ggzy.hefei.gov.cn/images/main_bg.jpg*/ center 194px no-repeat #f9f1e3;
+}
+
+
+
+/*! grid system 24栅格 998px */
+
+.ewb-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.ewb-row {
+    overflow: hidden;
+}
+
+
+
+/* top */
+
+.ewb-top {
+    height: 38px;
+    line-height: 38px;
+    color: #666;
+    background-color: #f6f6f6;
+}
+
+.ewb-top-link {
+    color: #d7d7d7;
+}
+
+.ewb-top-link a {
+    color: #333;
+    margin: 0 5px;
+}
+
+
+
+/* header */
+
+.ewb-header {
+    height: 108px;
+}
+
+img {
+    vertical-align: top;
+}
+
+.ewb-box {
+    width: 426px;
+    height: 36px;
+    border: 1px solid #df2922;
+}
+
+.ewb-seless {
+	font: 14px/1.231 "Microsoft YaHei", arial, helvetica, clean, sans-serif;
+    width: 95px;
+    height: 36px;
+    border: 0;
+    outline: 0;
+    background: inherit;
+	font-weight: bold;
+    color: #333;
+}
+
+.cssSelect .selectLt {
+    overflow: hidden;
+    width: 85px;
+    height: 36px;
+    line-height: 36px;
+    border: 0;
+    text-align: center;
+    padding: 0;
+}
+
+.cssSelect .selectRt {
+    display: block;
+    cursor: pointer;
+    width: 10px;
+    height: 36px;
+    background: url("../images/sele_arr.png")/*tpa=http://ggzy.hefei.gov.cn/images/sele_arr.png*/ center center no-repeat;
+    float: left;
+    padding: 0;
+    border: 0;
+}
+
+.cssSelect .selectBox {
+    cursor: pointer;
+    border: 0;
+    float: left;
+}
+
+.ewb-input {
+    width: 242px;
+    padding-left: 8px;
+    height: 36px;
+    line-height: 36px;
+    border: 0;
+    outline: 0;
+    color: #999;
+    background: inherit;
+}
+
+.ewb-submitss {
+    width: 81px;
+    height: 36px;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background-color: #df2922;
+	cursor: pointer;
+	float: right;
+}
+
+.ewb-submitss:hover{
+    background-color: #aa231d;
+	cursor: pointer;
+}
+
+
+/* nav */
+
+.ewb-nav {
+    height: 46px;
+    border-bottom: 2px solid #aa231d;
+    background-color: #df2922;
+}
+
+.ewb-nav-list {
+    width: 182px;
+    height: 46px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 21px;
+}
+/* .ewb-nav-list:first-child{
+    margin-right: 76px;
+} */
+.ewb-nav-list a {
+    display: block;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    color: #fff;
+}
+.ewb-nav-list.last a{
+    background: url("../images/baoguang.png")/*tpa=http://ggzy.hefei.gov.cn/images/baoguang.png*/ center center no-repeat;
+}
+
+.ewb-nav-item {
+    margin-right: -74px;
+}
+
+.ewb-nav-list.cur,
+.ewb-nav-list:hover {
+    background-color: #aa231d;
+    text-shadow: 0px 3px 0px #811714;
+}
+
+.ewb-nav-list.cur.last a,
+.ewb-nav-list:hover.last a{
+    background: url("../images/baoguangh.png")/*tpa=http://ggzy.hefei.gov.cn/images/baoguangh.png*/ center center no-repeat #df2922;
+}
+
+/* footer */
+
+.ewb-footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 122px;
+    background-color: #7c7c7c;
+}
+
+.ewb-footer p {
+    line-height: 22px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.ewb-sel {
+    width: 225px;
+    height: 31px;
+    line-height: 31px;
+    border: 0;
+    outline: 0;
+    margin-top: 11px;
+    background-color: #fff;
+}
+
+.ewb-footer-link span {
+    line-height: 54px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.ewb-zoom {
+    padding: 0 15px;
+    margin-top: 15px;
+    height: 525px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 8px #c5c6cd;
+    -moz-box-shadow: 0 0 8px #c5c6cd;
+    box-shadow: 0 0 8px #c5c6cd;
+}
+
+.ewb-link {
+    margin-top: 15px;
+    height: 82px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 6px #c5c6cd;
+    -moz-box-shadow: 0 0 6px #c5c6cd;
+    box-shadow: 0 0 6px #c5c6cd;
+}
+
+
+
+/* 链接 */
+
+.ewb-link-hd {
+    width: 135px;
+    height: 82px;
+    background-color: #fdf3ec;
+}
+
+.ewb-link-tab {
+    padding-right: 26px;
+    width: 109px;
+    height: 82px;
+    line-height: 82px;
+    font-size: 22px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.ewb-link-tab.current {
+    color: #fff;
+    background: url("../images/link_arr.png")/*tpa=http://ggzy.hefei.gov.cn/images/link_arr.png*/ right center no-repeat;
+    background-color: #df2922;
+}
+
+.ewb-link-bd {
+    width: 1045px;
+	    padding: 10px 5px 10px 15px;
+    height: 62px;
+}
+
+/* .ewb-link-item {
+	padding: 10px 5px 10px 15px;
+    height: 62px;
+} */
+
+.ewb-link-list {
+    width: 199px;
+    height: 62px;
+    margin-right: 10px;
+}
+
+.ewb-web-item {
+    padding-left: 15px;
+    padding-top: 2px;
+}
+
+.ewb-web-list {
+    height: 26px;
+    line-height: 26px;
+    width: 20%;
+    text-indent: 12px;
+    background: url("../images/link_list.jpg")/*tpa=http://ggzy.hefei.gov.cn/images/link_list.jpg*/ 0 center no-repeat;
+}
+
+.ewb-web-list a {
+    color: #333;
+}
+
+.ewb-web-list:hover a {
+    color: #df2922;
+}
+
+
+/* 右侧快捷键 */
+
+.ewb-cell {
+    position: fixed;
+    right: 0;
+    /* top: 327px; */
+    width: 68px;
+    background: url("../images/cell_mask.png")/*tpa=http://ggzy.hefei.gov.cn/images/cell_mask.png*/ repeat;
+	z-index: 1000;
+}
+
+.ewb-cell-list {
+    height: 73px;
+    width: 68px;
+    background: url("../images/cell_line.png")/*tpa=http://ggzy.hefei.gov.cn/images/cell_line.png*/ center bottom no-repeat;
+}
+
+.ewb-cell-list.last {
+    height: 72px;
+    background: none;
+}
+
+.ewb-cell-list a {
+    display: block;
+    padding-top: 47px;
+    color: #fff;
+    text-align: center;
+}
+
+.ewb-cell-icon1 {
+    background: url("../images/cell_icon1.png")/*tpa=http://ggzy.hefei.gov.cn/images/cell_icon1.png*/ center 13px no-repeat
+}
+
+.ewb-cell-icon2 {
+    background: url("../images/cell_icon2.png")/*tpa=http://ggzy.hefei.gov.cn/images/cell_icon2.png*/ center 11px no-repeat
+}
+
+.ewb-cell-icon3 {
+    background: url("../images/cell_icon3.png")/*tpa=http://ggzy.hefei.gov.cn/images/cell_icon3.png*/ center 15px no-repeat
+}
+
+.ewb-cell-icon4 {
+    background: url("../images/cell_icon4.png")/*tpa=http://ggzy.hefei.gov.cn/images/cell_icon4.png*/ center 12px no-repeat
+}
+
+.ewb-cell-icon5 {
+    background: url("../images/cell_icon5.png")/*tpa=http://ggzy.hefei.gov.cn/images/cell_icon5.png*/ center 12px no-repeat
+}
+
+
+.ewb-footer {
+	position: static;
+	margin-top: 15px;
+}
+
+
+.ewb-footer-fwl img{
+	margin-top:5px;
+}
+
+.ewb-submit{
+    font-weight: bold;
+    margin-left: 20px;
+    color: #fff;
+    width: 77px;
+    height: 34px;
+    text-align: center;
+    border: 0;
+    background-color: #df2922;
+}
+.ewb-submit:hover{
+    background-color: #aa231d;
+}

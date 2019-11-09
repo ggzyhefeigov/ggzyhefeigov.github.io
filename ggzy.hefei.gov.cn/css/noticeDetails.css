@@ -1,0 +1,593 @@
+/**!
+ * 安徽合肥公共资源交易中心-公告详情
+ *  author: wangkai;
+ */
+
+.article_content_box{min-height:1005px; background-color:#fff; width:1000px; border-radius:5px; margin:20px auto; position: relative; padding-bottom: 40px;}
+.article_box .current_position{height:34px;position:absolute; top: -10px; overflow: hidden;}
+.article_box .current_position .current_fillet_left{height:35px; width:10px; float:left;}
+.article_box .current_position .current_fillet_bg{background:url("../images/title-bg.png")/*tpa=http://ggzy.hefei.gov.cn/images/title-bg.png*/ repeat; padding-right:10px; height:35px;float:left; line-height:29px; font-size:14px; color:#fff;}
+.article_box .current_position .current_fillet_bg a{font-size:14px; color:#fff;}
+.article_box .current_position .current_fillet_right{height:35px; width:10px; float:left;}
+.article_box .current_position .small_trianglet{float:left; margin-top:-7px; margin-left:-1px;}
+.article_box .article_content{padding-top:40px; width: 900px; margin: 0 auto;}
+.article_box .article_content .article_list{margin-bottom: 50px;}
+.article_box .article_content .article_list .article_title{height:34px; border-bottom:1px solid #d9d9d9; line-height: 35px;}
+.article_box .article_content .article_list .article_title .title_left{float:left; height: 34px;}
+.article_box .article_content .article_list .article_title .title_left .title_icon{background:url("../images/article_title.png")/*tpa=http://ggzy.hefei.gov.cn/images/article_title.png*/ no-repeat; width: 34px; height: 34px; display: inline-block; vertical-align: middle; margin-bottom: 3px;}
+.article_box .article_content .article_list .article_title .title_left a{line-height: 34px; font-size: 16px; color: #333;}
+.article_box .article_content .article_list .article_title .title_right{float: right;}
+.article_box .article_content .article_list .article_title .title_right a{line-height: 34px; color: #666; font-family: Ã¥Â®â€¹Ã¤Â½â€œ;}
+.article_box .article_content .article_list .content_box{margin-top: 5px;}
+.article_box .article_content .article_list .content_box li{height: 30px; line-height: 30px;}
+.article_box .article_content .article_list .content_box .content_left{float: left; width: 802px; overflow: hidden;}
+.article_box .article_content .article_list .content_box .content_left .origin_icon{line-height: 30px;}
+.article_box .article_content .article_list .content_box .content_left a{line-height: 30px; color: #666; font-size: 14px;}
+.article_box .article_content .article_list .content_box .content_left a:hover{color: #ed5b5a; text-decoration: underline;}
+.article_box .article_content .article_list .content_box .content_right{float: right; font-size: 14px; color: #666; margin-left: 20px;}
+.skip_link{width: 120px; height: 30px; line-height:30px; margin: 0 auto; text-align: center;background: #f2504f;color: #fff;margin-top: 20px;border-radius: 5px;-moz-border-radius: 5px; -webkit-border-radius: 5px; cursor: pointer;}
+.article_box .article_listbox{width: 900px; margin: 0 auto; min-height: 820px; padding-top: 20px; overflow: hidden;}
+.article_box .article_listbox ul li{height: 40px; line-height: 40px;}
+.article_box .article_listbox ul .content_left{float: left; width: 802px; overflow: hidden; height: 40px;}
+.article_box .article_listbox ul .content_left .origin_icon{color: #ed5b5a; padding-right: 5px;}
+.article_box .article_listbox ul .content_left a{color: #666; font-size: 14px;}
+.article_box .article_listbox ul .content_left a:hover{color: #ed5b5a; text-decoration: underline;}
+.article_box .article_listbox ul .content_right{float: right; font-size: 14px; color: #666; margin-left: 20px;}
+.article_box .article_page{width: 900px; margin: 0 auto; border-top: 1px solid #ddd; text-align: center;}
+.article_box .article_page .page_above{margin-top: 20px;}
+.article_box .article_page .page_above span{font-size: 16px; font-weight: bold; padding: 0 20px; display: inline-block; font-family: Ã¥Â®â€¹Ã¤Â½â€œ; color: #999;}
+.article_box .article_page .page_above a{padding: 1px 7px; border: 1px solid #d9d9d9; color: #d44545; margin: 0 1px; }
+.article_box .article_page .page_above a.active{background-color: #d44545; color: #fff; border-color: #d44545;}
+.article_box .article_page .page_above a:hover{background-color: #d44545; color: #fff; border-color: #d44545;}
+.article_box .article_page .page_below{margin-top: 15px; font-size: 14px;}
+.article_box .article_page .page_below .page_tip{color: #d44545;}
+.article_box .article_wrap{width: 800px; margin: 0 auto;}
+.article_box .article_head{padding-top: 72px;width: 600px;text-align: center;margin: auto;line-height: 39px;}
+.article_box .article_head h2{text-align: center;font-size: 24px;font-weight: normal;color: #333;font-weight: bold;letter-spacing: 1px;}
+.article_box .article_subtitle{padding-top: 29px;padding-bottom: 6px;border-bottom: 1px solid #ddd;text-align: center;}
+.article_box .article_subtitle span{font-size: 12px;margin-right: 25px;color: #666;}
+.article_box .detail_box{padding-top: 26px;}
+.article_box p{font-size: 14px;line-height: 26px;color: #333;}
+.article_box .share_box{margin:auto;margin-top: 60px; margin-bottom: 40px; height:30px;width:800px; }
+.article_box .article_read{margin:auto;padding-top: 30px; border-top: 1px solid #ddd;width:800px;}
+.article_box .article_read h2{font-size: 18px; font-weight: normal; margin-bottom: 10px;}
+.article_box .article_read p{line-height: 40px; font-size: 16px;}
+.article_box .article_read p a{color: #333; font-size: 16px; padding-left: 20px;}
+.article_box .article_read p a:hover{color: #ed5b5a; text-decoration: underline;}
+.article_box .detail_box img {width:100%;}
+.article_box .article_report{ padding-top: 30px; }
+.article_box .article_report select{font-size: 15px; border: #d9d9d9 solid 1px; width: 160px; height: 30px; margin: 0 auto; display: inherit;}
+.trade_timeset {position:relative; width:500px; height:90px; text-align:center; margin:40px auto 0;}
+.trade_timeset .trade_nowstate {position:relative; width:120px; height:30px; margin:0 auto; padding:0 10px; font-size:16px; line-height:30px; background:#eee;z-index:2; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+.trade_timeset .timeset_box {position:absolute; width:390px; height:75px; line-height:75px; top:15px; left:55px; border:1px solid #eee; z-index:1;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+.trade_timeset .timeset_box span { padding:3px 5px; margin:0 5px; background:#eee; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;}
+.trade_timeset .timeset_box i{ font-size:10px; font-style: normal; padding-top:15px;}
+.trade_timeset_ing .trade_nowstate{background:#f2504f; color:#ffffff;}
+.trade_timeset_ing .timeset_box{background:#ffffff;border-color:#f2504f; color:#333333;}
+.trade_timeset_ing .timeset_box span{background:rgba(242,80,78,.6); color:#ffffff;}
+.trade_timeset_ago .trade_nowstate{background:#cccccc; color:#333;}
+.trade_timeset_ago .timeset_box{background:#fff;border-color:#cccccc; color:#999;}
+.trade_timeset_ago .timeset_box span{background:#eeeeee; color:#999999;}
+.preview_box{     margin-top: 20px;padding:20px;border:1px solid #f2504f; z-index:1;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;font-size: 18px;line-height: 36px;}
+.preview_box  .file{margin-bottom:20px;}
+.preview_box  span{color:#333;}
+.detail_box p{color: rgb(51,51,51)!important;font-size: 18px!important;line-height: 36px!important;}
+.prev , .next {
+	color: #333;
+}
+
+.prev:hover {
+	color:red;
+	text-decoration: underline;
+}
+
+.next:hover {
+	color:red;
+	text-decoration: underline;
+}
+
+
+
+/* 当前位置 */
+
+.ewb-home {
+    height: 49px;
+    line-height: 49px;
+    padding-left: 23px;
+    color: #000;
+    background: url("../images/home.png")/*tpa=http://ggzy.hefei.gov.cn/images/home.png*/ 0 center no-repeat;
+}
+.ewb-footer {
+    position: static;
+    margin-top: 15px;
+}
+.ewb-home a {
+    color: #000;
+    margin: 0 5px;
+}
+
+.ewb-home .cur {
+    color: #000;
+}
+
+/* 侧边按钮 */
+
+.ewb-side-link {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -79px;
+    margin-left: -600px;
+    height: 158px;
+}
+
+.ewb-sl-node {
+    margin-top: 10px;
+    width: 57px;
+    height: 46px;
+    line-height: 46px;
+    vertical-align: top;
+    background: url("../images/tradeInfo/sl_node.png")/*tpa=http://ggzy.hefei.gov.cn/images/tradeInfo/sl_node.png*/;
+}
+
+.ewb-sl-node:first-child {
+    margin-top: 0;
+}
+
+.ewb-sl-node a {
+    display: block;
+    height: 46px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.ewb-sl-node a span {
+    /* display: none; */
+    color: #fff;
+    cursor: pointer;
+}
+
+/* .ewb-sl-ico1 {
+    background: url(../images/tradeInfo/sl_ico1.png) 13px center no-repeat;
+}
+
+.ewb-sl-ico2 {
+    background: url(../images/tradeInfo/sl_ico2.png) 14px center no-repeat;
+}
+
+.ewb-sl-ico3 {
+    background: url(../images/tradeInfo/sl_ico3.png) 12px center no-repeat;
+} */
+
+.ewb-sl-node {
+    width: 81px;
+    background: url("../images/tradeInfo/sl_node_cur.png")/*tpa=http://ggzy.hefei.gov.cn/images/tradeInfo/sl_node_cur.png*/ right
+    no-repeat;
+}
+
+.ewb-sl-node a {
+    background: none;
+}
+
+.ewb-sl-node span {
+    display: block;
+}
+
+
+/* main */
+
+.ewb-main {
+    padding: 32px 101px;
+    background-color: #fff;
+}
+
+.ewb-notice-tt {
+    padding: 0 14px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.ewb-notice-flow {
+    margin-top: 20px;
+    height: 63px;
+}
+
+.ewb-nl-node {
+    float: left;
+    margin-left: -14px;
+    width: 154px;
+    height: 63px;
+    vertical-align: top;
+    background: url("../images/tradeInfo/nl_ico2.png")/*tpa=http://ggzy.hefei.gov.cn/images/tradeInfo/nl_ico2.png*/;
+    position: relative;
+}
+
+.ewb-nl-node:first-child {
+    margin-left: 0;
+    background: url("../images/tradeInfo/nl_ico1.png")/*tpa=http://ggzy.hefei.gov.cn/images/tradeInfo/nl_ico1.png*/;
+}
+
+.ewb-nl-node.last {
+    background: url("../images/tradeInfo/nl_ico3.png")/*tpa=http://ggzy.hefei.gov.cn/images/tradeInfo/nl_ico3.png*/;
+}
+
+.ewb-nl-info {
+    padding-top: 20px;
+    width: 142px;
+    text-align: center;
+}
+
+.ewb-nl-node:first-child .ewb-nl-info {
+    width: 130px;
+}
+
+.ewb-nl-name {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    color: #666;
+}
+
+.ewb-nl-date {
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #666;
+}
+
+.ewb-nl-number {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    margin-top: -13px;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    font-family: "Arial";
+    color: #999;
+    background: url("../images/tradeInfo/nl_yuan.png")/*tpa=http://ggzy.hefei.gov.cn/images/tradeInfo/nl_yuan.png*/;
+}
+
+.ewb-nl-node.current {
+    background: url("../images/tradeInfo/nl_ico2_cur.png")/*tpa=http://ggzy.hefei.gov.cn/images/tradeInfo/nl_ico2_cur.png*/;
+}
+
+.ewb-nl-node:first-child.current {
+    background: url("../images/tradeInfo/nl_ico1_cur.png")/*tpa=http://ggzy.hefei.gov.cn/images/tradeInfo/nl_ico1_cur.png*/;
+}
+
+.ewb-nl-node.last.current {
+    background: url("../images/tradeInfo/nl_ico3_cur.png")/*tpa=http://ggzy.hefei.gov.cn/images/tradeInfo/nl_ico3_cur.png*/;
+}
+
+.ewb-nl-node.current .ewb-nl-name,
+.ewb-nl-node.current .ewb-nl-date {
+    color: #fff;
+}
+
+.ewb-nl-node.current .ewb-nl-number {
+    color: #ed8a15;
+}
+
+.ewb-info-source {
+    padding: 32px 0 19px 0;
+    border-bottom: 1px solid #e3e3e3;
+    line-height: 24px;
+    text-align: center;
+}
+
+.ewb-info-source span {
+    display: inline-block;
+    margin: 0 18px;
+    color: #999;
+}
+
+.ewb-info-box {
+    margin-top: 25px;
+}
+
+.ewb-info-tab {
+    padding-left: 10px;
+    height: 47px;
+    line-height: 47px;
+    border-bottom: 1px solid #df2922;
+}
+
+.ewb-info-tabname {
+    float: left;
+    margin-left: 20px;
+    width: 181px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    background: url("../images/tradeInfo/tab_ico.png")/*tpa=http://ggzy.hefei.gov.cn/images/tradeInfo/tab_ico.png*/;
+}
+
+.ewb-info-tabname:first-child {
+    margin-left: 0;
+}
+
+.ewb-info-tabname.current {
+    color: #fff;
+    background: url("../images/tradeInfo/tab_ico_cur.png")/*tpa=http://ggzy.hefei.gov.cn/images/tradeInfo/tab_ico_cur.png*/;
+}
+
+.ewb-info-tabname.not-use {
+    color: #999;
+    background: url("../images/tradeInfo/tab_ico_no.png")/*tpa=http://ggzy.hefei.gov.cn/images/tradeInfo/tab_ico_no.png*/;
+}
+
+.ewb-info-bd {
+    margin-top: 41px;
+	min-height: 400px;
+
+}
+.ewb-countdown {
+    margin: 0 auto;
+    padding-top: 32px;
+    width: 314px;
+    height: 44px;
+    border: 1px solid #df2922;
+    border-radius: 5px;
+    position: relative;
+	    display: none;
+}
+
+.ewb-cd-tt {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    margin-left: -68px;
+    width: 137px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #df2922;
+}
+
+.ewb-cd-tt span {
+    font-size: 16px;
+    color: #fff;
+}
+
+.ewb-countdown.end {
+    background-color: #beac81;
+}
+
+.ewb-countdown.end .ewb-cd-tt {
+    height: 90px;
+    line-height: 90px;
+}
+
+.ewb-countdown.end .ewb-time {
+    display: none;
+}
+
+.ewb-time {
+    padding-left: 60px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.ewb-time-number {
+    float: left;
+    width: 29px;
+    height: 28px;
+    text-align: center;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #df2922;
+}
+
+.ewb-time-name {
+    float: left;
+    margin: 0 19px 0 3px;
+}
+
+.ewb-time-name.ewb-ie7 {
+    *min-width: 30px;
+}
+
+.ewb-info-main {
+    *zoom: 1;
+}
+
+.ewb-info-main {
+    margin-top: 15px;
+    font-size: 14pt;
+}
+
+.ewb-info-main table {
+    max-width: 998px;
+}
+
+
+.ewb-info-content {
+    line-height: 32px;
+}
+
+.ewb-info-tt {
+    line-height: 34px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ewb-has-underline {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.ewb-info-content.keep-right {
+    text-align: right;
+}
+
+.ewb-info-footer {
+    margin-top: 20px;
+    padding: 10px 14px 22px 14px;
+    border: 1px solid #dedede;
+}
+
+.ewb-enclosure {
+    display: block;
+    text-indent: 2em;
+    line-height: 32px;
+    color: #de3c0a;
+}
+
+.ewb-info-content.hasindent {
+    padding-left: 2em;
+}
+
+.ewb-info-links {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #cbcbcb;
+}
+
+.ewb-il-node {
+    line-height: 32px;
+    vertical-align: top;
+}
+
+.ewb-il-node label {
+    float: left;
+    width: 60px;
+    text-align: right;
+}
+
+.ewb-il-node p {
+    float: left;
+    width: 938px;
+    padding: 4px 0;
+}
+
+.ewb-il-node p a {
+    float: left;
+    line-height: 24px;
+    color: #333;
+}
+
+.jxTenderObjNav{
+	padding: 0px 15px;
+	height: 50px;line-height: 50px;
+	background-image: linear-gradient(180deg, 
+		rgba(249, 249, 249, 1) 0%, 
+		rgba(243, 243, 243, 1) 100%), 
+	linear-gradient(
+		rgba(228, 228, 228, 1), 
+		rgba(228, 228, 228, 1));
+	background-blend-mode: normal, 
+		normal;
+	font-size: 18pt;
+	color: #333;
+	margin-bottom: 6px;
+}
+.jxTenderObjMain{
+	margin-bottom: 20px;
+}
+.jxTenderObjMain table{
+	width: 100%;
+}
+.jxTenderObjMain table tr td{
+	padding: 10px;
+	vertical-align: middle;
+	text-align: left;
+	border:1px solid #dddddd;
+	color: #666666;
+	word-wrap: break-word;  
+	word-break: normal;
+    max-width: 160px;
+    line-height:20px;
+}
+.jxTenderObjMain table .jxTenderObjMainLeftName{
+	background-color: #efefef;
+	color: #333333;
+	text-align: right;
+	width: 20%;
+}
+.jxTenderObjMain table .jxTenderObjMainLeftName{
+	background-color: #efefef;
+	color: #333333;
+	text-align: right;
+	width: 15%;
+}
+.jxTenderObjMain table .jxTenderObjMainLeftName1{
+	background-color: #efefef;
+	color: #333333;
+	text-align: right;
+	/* width: 140px; */
+}
+
+.jxTenderObjMain table tr td a{
+	text-decoration: none;
+	color: #3897de;
+}
+
+.dayititlt {
+	font: 16pt 仿宋_GB2312, arial, helvetica, clean, sans-serif;
+	font-family: 仿宋_GB2312;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+}
+
+.dayicontent {
+	font: 16pt 仿宋_GB2312, arial, helvetica, clean, sans-serif;
+	font-family: 仿宋_GB2312;
+    text-indent: 2em;
+    height: 30px;
+    line-height: 30px;
+}
+
+div.cont_hr:first-child {
+	font-size: 16pt;
+    color: #df2922;
+    font-family: 仿宋_GB2312;
+    font-weight: bold;
+    border-top: 0px solid #df2922;
+    margin-top: 0;
+}
+
+div.cont_hr {
+	font-size: 16pt;
+    color: #df2922;
+    border-top: 1px solid #df2922;
+    margin-top: 30px;
+    font-family: 仿宋_GB2312;
+    font-weight: bold;
+}
+
+.huiyuankudayicontent {
+	font-family: 仿宋_GB2312;
+	font-size: 14pt;
+	height: 30px;
+	line-height: 30px;
+	text-indent: 2em;
+}
+
+.lianxidanweiname {
+	font-family: 仿宋_GB2312;
+	font-size: 14pt;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+    margin-right: 30px;
+}
+
+.dayidate {
+	font-family: 仿宋_GB2312;
+	font-size: 14pt;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+    margin-right: 30px;
+}
+
+.ewb-info-bd div span a {
+	display: none
+}
