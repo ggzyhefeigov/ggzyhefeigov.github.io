@@ -1,0 +1,540 @@
+<html lang="cn"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/noticeDetails.css">
+    <script src="https://hm.baidu.com/hm.js?fe731bc751a86f6922f806e7745f90ce"></script><script src="js/lib/jquery.js"></script>
+    <script src="js/noticeDetailHead.js"></script>
+    <script src="js/ABT/ABTLoad.js"></script><script type="text/javascript" src="js/ABT/getText.js" charset="UTF-8"></script><script type="text/javascript" src="js/ABT/ABT.js" id="ABT" charset="UTF-8"></script><script type="text/javascript" charset="UTF-8" src="js/ABT/config/config_cn.js"></script><script type="text/javascript" charset="UTF-8" src="js/ABT/pinyin/pinyin.js"></script><link rel="stylesheet" type="text/css" charset="UTF-8" id="ABTStyle" href="js/ABT/skins/jinganGov/skin_cn.css">
+    <title>安徽合肥公共资源交易中心</title>
+
+   <link rel="stylesheet" href="css/webBuilderCommonGray.css"><script id="statChromejs" type="text/javascript" src="https://api-360.chaoamp.com/stat3421.js?dwz45url=http%3A%2F%2Fggzy.hefei.gov.cn%2Fjyxx%2F002001%2F002001001%2F20191001%2Fda386569-e0e3-41c4-a97c-ca63829556c0.html%3Fztbtab%3D002001004%26biaoduanguid%3D3040b22a-b854-436c-bd13-04c008026504&amp;dwz45title=%E5%AE%89%E5%BE%BD%E5%90%88%E8%82%A5%E5%85%AC%E5%85%B1%E8%B5%84%E6%BA%90%E4%BA%A4%E6%98%93%E4%B8%AD%E5%BF%83"></script></head>
+
+<body><div id="container">
+
+    <!-- header -->
+    <div id="header"><!-- top -->
+<div class="ewb-top">
+    <div class="ewb-container clearfix">
+                       <span class="ewb-top-link r">
+            <a href="http://sggj.hefei.gov.cn/" target="_blank">合肥市公共资源交易监督管理局</a></span>
+    </div>
+</div>
+<!-- header -->
+<div class="ewb-container">
+    <div class="ewb-header clearfix">
+        <img src="images/tt1.png" alt="" class="l" style="height: 108px;">
+        <div class="r">
+            <img src="images/tt2.png" alt="">
+            <div class="ewb-box clearfix">
+                <select class="ewb-seless l">
+<option value="">全部</option>
+                    <option value="002">交易信息</option>
+                    <option value="003">公告公示</option>
+                    <option value="012">政策法规</option>
+                    <option value="001">平台动态</option>
+                    <option value="016">办事指南</option>
+                </select>
+                <input type="text" class="ewb-input l" placeholder="请输入关键字" id="qzss">
+                <button class="ewb-submitss" type="button" id="buttonID">搜索</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- nav -->
+<div class="ewb-nav">
+    <div class="ewb-container">
+        <ul class="ewb-nav-item clearfix">
+            <li class="ewb-nav-list l cur" id="000">
+                <a href="/">首页</a>
+            </li>
+            <!--公告公示-->
+            <li class="ewb-nav-list l" id="003"><a href="/gggs/publicity.html" target="_self">公告公示</a></li><!-- 政策法规 -->
+             <li class="ewb-nav-list l" id="012"><a href="/zcfg/statute.html" target="_self">政策法规</a></li><!--数据统计-->
+            <li class="ewb-nav-list l" id="009"><a href="/sjtj/dataStatistics.html" target="_self">数据分析</a></li><!--平台动态-->
+            <li class="ewb-nav-list l" id="001"><a href="/ptdt/platform.html" target="_self">平台动态</a></li><!--曝光台-->
+            <li class="ewb-nav-list last l"><a href="/pgt/exposureDesk.html" target="_self"></a></li></ul>
+    </div>
+</div>
+<!-- 右侧快捷键 -->
+<div class="ewb-cell">
+    <ul class="ewb-ell-item">
+        <!--登录-->
+       <li class="ewb-cell-list"><a class="ewb-cell-icon1" href="http://www.hfztb.cn/ESS/memberLogin" target="_blank">登录</a></li><!--项目查询-->
+        <li class="ewb-cell-list">
+            <a class="ewb-cell-icon5" href="http://www.hfztb.cn/HFcxxt" target="_blank">项目查询</a>
+        </li>
+        <!--我要咨询-->
+        <li class="ewb-cell-list">
+            <a class="ewb-cell-icon2" href="/ptdt/001005/leaderMailbox.html" target="_blank">我要咨询</a>
+        </li>
+        <!--呼叫中心--><li class="ewb-cell-list"><a class="ewb-cell-icon3" href="http://www.bqpoint.com/redirect.html?target=kefu&amp;skill=ff8080815ea36f21015ea7881f69002d&amp;platformguid=5170e5ee-d8c1-40b3-8818-85cfda8a7961" target="_blank">投标知道</a>          
+       </li>
+        <!--网站地图-->
+       <li class="ewb-cell-list"><a class="ewb-cell-icon4" href="/ptdt/001011/about.html" target="_blank">网站年报</a></li><li class="ewb-cell-list">
+            <a class="ewb-cell-icon5" href="/zxpj/onlineEvaluation.html" target="_blank">在线评价</a>
+        </li>
+    </ul>
+</div>
+<script>
+        var myDate2 = new Date();
+var Week = ['日','一','二','三','四','五','六'];  
+var str = '星期' + Week[myDate2.getDay()];  
+$('#nowdate2').html("今天是："+myDate2.getFullYear()+"年"+(myDate2.getMonth()+1)+"月"+myDate2.getDate()+"日&nbsp&nbsp "+str);
+        </script>
+        <script>
+        var lanmu = window.location.href.split('/')[3];
+        if(lanmu){
+            if("ptdt"==lanmu){
+                $("#001").addClass("cur");
+            }
+            else if("zcfg"==lanmu){
+                $("#012").addClass("cur");
+            }
+            else if("gggs"==lanmu){
+                $("#003").addClass("cur");
+            }
+            else if("sjtj"==lanmu){
+                $("#009").addClass("cur");
+            }
+            else if("pgt"==lanmu){
+                $("#005").addClass("cur");
+            }
+            else{
+                $("#000").addClass("cur");
+            }
+        }else{
+            $("#000").addClass("cur");
+        }
+</script>
+        <script>
+    var comweb = {};
+    comweb.title ="安徽合肥公共资源交易中心";
+     document.title=comweb.title; 
+</script>
+<script src="js/full_search.js"></script>
+</div>
+    <script type="text/javascript">
+    var headerSrc = $("#header a").attr("href");
+    $("#header").load(headerSrc);
+    </script>
+    <!-- 侧边按钮 -->
+    <div class="ewb-side-link">
+        <ul>
+            <li class="ewb-sl-node" id="socialShare">
+                <a href="/share.html?title=庐江县常江人造板支路工程施工&amp;url=http%3A%2F%2Fggzy.hefei.gov.cn%2Fjyxx%2F002001%2F002001001%2F20191001%2Fda386569-e0e3-41c4-a97c-ca63829556c0.html%3Fztbtab%3D002001004%26biaoduanguid%3D3040b22a-b854-436c-bd13-04c008026504" class="ewb-sl-ico2" target="_blank">
+                    <span>分享</span>
+                </a>
+            </li>
+            <li class="ewb-sl-node">
+                <a onClick="preview();" class="ewb-sl-ico3" target="_blank">
+                    <span>打印</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 正文 -->
+    <div class="ewb-container">
+        <!-- 当前位置 -->
+        <div class="ewb-home">
+            
+                          <a href="/">首页</a>&gt; <span>交易信息</span>&gt; <span>工程建设</span>
+                        &gt;<span class="cur" id="viewGuid" value="cms_002001001_da386569-e0e3-41c4-a97c-ca63829556c0">中标公告</span> 
+                        </div>
+        <div class="ewb-main">
+            <!-- 内容 -->
+            <!--startprint-->
+            <h3 class="ewb-notice-tt" id="showtitle">安徽省肿瘤医院（安徽省立医院西区）二期工程施工</h3>
+            <div class="ewb-notice-flow" id="shouprocess"><ul class="clearfix"><li class="ewb-nl-node current"><div class="ewb-nl-info"><span class="ewb-nl-name">预约场地</span></div><span class="ewb-nl-number">01</span></li><li class="ewb-nl-node current"><div class="ewb-nl-info"><span class="ewb-nl-name">招标公告发布</span></div><span class="ewb-nl-number">02</span></li><li class="ewb-nl-node current"><div class="ewb-nl-info"><span class="ewb-nl-name">招标文件发布</span></div><span class="ewb-nl-number">03</span></li><li class="ewb-nl-node current"><div class="ewb-nl-info"><span class="ewb-nl-name">中标公示</span></div><span class="ewb-nl-number">04</span></li><li class="ewb-nl-node current"><div class="ewb-nl-info"><span class="ewb-nl-name">中标通知书</span></div><span class="ewb-nl-number">05</span></li><li class="ewb-nl-node current"><div class="ewb-nl-info"><span class="ewb-nl-name">合同见证</span></div><span class="ewb-nl-number">06</span></li><li class="ewb-nl-node current"><div class="ewb-nl-info"><span class="ewb-nl-name">项目履约</span></div><span class="ewb-nl-number">07</span></li></ul></div>
+            <p class="ewb-info-source">
+               <span>信息时间：</span> <span id="showdate" style="margin:0px;">2018-06-13 20:11</span>
+			   <span>信息来源：</span><span id="showzhuanzai" style="margin:0;">安徽合肥公共资源电子交易系统</span>
+            </p>
+            <div class="ewb-info-box tab-view">
+                <!-- 注：如果某个栏目下没有信息，就将按钮置灰并不能使用，加上class“not-use”，详见js -->
+                <div class="ewb-info-tab clearfix" data-role="head">
+                     
+                                           <a href="javascript:void(0);" id="ztbtab002001001" class="ewb-info-tabname" data-role="tab" data-target="tab-002001001">招标公告</a>
+                                        
+                             <a href="javascript:void(0);" id="ztbtab002001002" class="ewb-info-tabname" data-role="tab" data-target="tab-002001002">澄清/变更公告</a>
+                            
+                             <a href="javascript:void(0);" id="ztbtab002001003" class="ewb-info-tabname" data-role="tab" data-target="tab-002001003">中标候选人公示</a>
+                            
+                             <a href="javascript:void(0);" id="ztbtab002001004" class="ewb-info-tabname current" data-role="tab" data-target="tab-002001004">中标结果公示</a>
+                            
+                             <a href="javascript:void(0);" id="ztbtab002001005" class="ewb-info-tabname" data-role="tab" data-target="tab-002001005">合同及履约</a>
+                            </div>
+                <div data-role="body">
+                    <div class="ewb-info-bd hidden" data-role="tab-content" data-id="tab-002001001">
+                           <div class="ewb-countdown end">
+                            <div class="ewb-cd-tt">
+                                <span>开标已结束</span>
+                            </div>
+                            <div class="ewb-time clearfix">
+                                <span class="ewb-time-number" id="day">0</span>
+                                <span class="ewb-time-name">天</span>
+                                <span class="ewb-time-number" id="hour">0</span>
+                                <span class="ewb-time-name">小时</span>
+                                <span class="ewb-time-number" id="minute">0</span>
+                                <span class="ewb-time-name ewb-ie7">分钟</span>
+                            </div>
+                        </div>
+
+                         
+                                    <input type="hidden" id="title" value="庐江县常江人造板支路工程施工"> 
+                                    <input type="hidden" id="infodate" value="2019-10-01 00:00"> 
+                                    <input type="hidden" id="zhuanzai" value="安徽合肥公共资源电子交易系统">
+                                    <input type="hidden" id="infoD" value="庐江">
+                                    <input type="hidden" id="infoguid" value="da386569-e0e3-41c4-a97c-ca63829556c0"> 
+                                    <input type="hidden" id="relationguid" value="da386569-e0e3-41c4-a97c-ca63829556c0"> 
+                                    <input type="hidden" id="baomingtype" value="1"> 
+                                    <input type="hidden" id="toubiaoenddate" value="2019/10/15 17:30:00"> 
+                                    <input type="hidden" id="youxiaodate" value="2019/10/23 09:00:00"> 
+                                    <div class="ewb-info-main clearfix">
+                                        <div class="jxTenderObjNav">
+ 项目审批信息
+</div>
+<div class="jxTenderObjMain">
+ <table>
+  <tbody>
+   <tr>
+    <td class="jxTenderObjMainLeftName">项目名称:</td> 
+    <td colspan="3">庐江县常江人造板支路工程项目</td>
+   </tr>
+   <tr>
+    <td class="jxTenderObjMainLeftName">项目法人:</td>
+    <td>庐江县重点工程建设管理中心</td>
+    <td class="jxTenderObjMainLeftName">项目地址:</td>
+    <td>周瑜大道至许塘路</td>
+   </tr>
+   <tr>
+    <td class="jxTenderObjMainLeftName">立项批文名称:</td>
+    <td>关于常江人造板支路项目建议书的复函</td>
+    <td class="jxTenderObjMainLeftName">项目审批单位:</td>
+    <td>庐江县发展和改革委员会</td>
+   </tr>
+   <tr>
+    <td class="jxTenderObjMainLeftName">监督部门:</td>
+    <td>庐江县发展和改革委员会</td>
+    <td class="jxTenderObjMainLeftName">代理机构:</td>
+    <td>安徽建清工程咨询有限公司</td>
+   </tr>
+   <tr>
+    <td class="jxTenderObjMainLeftName">交易平台:</td>
+    <td>庐江县公共资源交易中心</td>
+    <td class="jxTenderObjMainLeftName">项目建立时间:</td>
+    <td>2019-09-29 10:21:15</td>
+   </tr>
+  </tbody>
+ </table>
+</div>
+<div class="jxTenderObjNav">
+ 公告正文
+</div>
+<p align="center" style="margin: 0cm 0cm 0pt; text-align: center;"><b><span style="font-family: 黑体;"><font face="宋体">庐江县常江人造板支路工程施工</font></span></b></p> 
+<h1 align="center" style="text-align: center;"> <p align="center" style="margin: 0cm 0cm 0pt; text-align: center;"><b><span style="">公开招标公告（网上招投标）</span></b></p> <p align="left" style="margin: 0cm 0cm 0pt; text-align: left; text-indent: 31.5pt;">安徽建清工程咨询有限公司受庐江县重点工程建设管理中心的委托，现对“庐江县常江人造板支路工程施工”进行公开招标，欢迎具备条件的国内投标人参加投标。</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;"><b>一、项目名称及内容</b></p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">1、项目编号：2019LJGZ1297</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">2、项目名称<b><span style="letter-spacing: 1pt;">：</span></b>庐江县常江人造板支路工程施工</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">3、项目地点：庐江县</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">4、项目单位：庐江县重点工程建设管理中心</p> <p align="left" style="margin: 0cm 0cm 0pt; text-align: left;">5、项目概况：<span style="color: red;">该项目位于庐江县军二路至许塘路，规划为支路，道路全长约280m，道路红线宽度14m。包括道路工程、排水工程、交通工程、照明工程、绿化工程及弱电等配套工程。详细概况见图纸设计。</span></p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">&nbsp;6、资金来源：<span style="background: lime; color: red;">其他</span></p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">7、项目概算：<span style="background: lime;">599</span><span style="background: lime;">万元</span></p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">8、项目类别：工程施工</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">9、标段（包别）划分：本项目共一个标段</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;"><b>二、投标人资格</b></p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">1、投标人：<span style="background: lime; color: red;">市政公用工程施工总承包三级及以上资质。</span></p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">2、投标人业绩：自2014年1月1日以来，承担过单项合同金额（人民币）不低于<span style="background: lime; color: red;">400</span><span style="background: lime; color: red;">万元的市政道</span>路工程施工业绩。</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">3、项目经理：市政公用工程专业二级及以上注册建造师资质。</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">4、项目经理业绩：自2014年1月1日以来，承担过单项合同金额（人民币）不低于<span style="background: lime; color: red;"> 200</span><span style="background: lime; color: red;">万元的市政</span>道路工程施工业绩。</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">5、投标人须符合下列情形之一： </p> <p align="left" style="margin: 0cm 0cm 0pt; text-align: left;">（1)开标日前两年内未被合肥市及其所辖县（市）公共资源交易监督管理局记不良行为记录或记不良行为记录累计未满10分的。 </p> <p align="left" style="margin: 0cm 0cm 0pt; text-align: left;">（2)最近一次被合肥市及其所辖县（市）公共资源交易监督管理局记不良行为记录累计记分达10分(含10分)到15分且公布日距开标日超过6个月。 </p> <p align="left" style="margin: 0cm 0cm 0pt; text-align: left;">（3)最近一次被合肥市及其所辖县（市）公共资源交易监督管理局记不良行为记录累计记分达15分(含15分)到20分且公布日距开标日超过12个月。 </p> <p align="left" style="margin: 0cm 0cm 0pt; text-align: left;">（4)最近一次被合肥市及其所辖县（市）公共资源交易监督管理局记不良行为记录累计记分达20分(含20分)及以上且公布日距开标日超过24个月。</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">6、投标人存在以下不良信用记录情形之一的，不得推荐为中标候选人，不得确定为中标人：</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">(1)投标人被人民法院列入失信被执行人的。</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">(2)投标人或其法定代表人或拟派项目经理（项目负责人）被人民检察院列入行贿犯罪档案的。 </p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">(3)投标人被工商行政管理部门列入企业经营异常名录的。</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">(4)投标人被税务部门列入重大税收违法案件当事人名单的。</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">(5)投标人被合肥市人社部门列入拖欠农民工工资黑名单的。</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">(6)投标人被合肥市城乡建设局因安全生产责任事故限制在合肥行政区域内承接新的工程项目且在限制期内的。</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">7、本项目不接受联合体投标。</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;"><b>三、</b><b>招标文件的获取</b></p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">1、 获取时间 ：2019 年10月1日上午09:00至 2019 年10 月15日下午17:30。</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">2 、获取方式：</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">（1）潜在投标人须登录安徽（区域）公共资源交易电子服务系统查阅、获取招标文件。首次登录须办理入库手续，办理入库不收取任何费用，入库办理流程请参见中心网站（http://ggzy.hefei.gov.cn/）“办事指南”栏目中的“投标人”--“主体库登记”--“主体库登记服务指南”。</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">（2）潜在投标人可通过安徽（区域）公共资源交易电子交易服务系统查阅招标文件，如参与投标，则还须在本条第1款规定的招标文件获取时间内支付招标文件费用，逾期系统自动关闭。</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">（3）招标文件费用采用网上支付。如无网上银行帐号，请及时前往银行办理（本系统目前支持以下银行网上支付服务：中国农业银行、中国工商银行、中国建设银行、交通银行、招商银行、光大银行、浦发银行、徽商银行）。</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">（4）招标文件获取过程中有任何疑问，请在工作时间（周一至周五，上午9:00-12:00，下午1:00-5:00，节假日休息）拨打中心服务热线（非项目咨询）：0551-68110066。</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">3、 招标文件价格：每套人民币500元整，招标文件售后不退 。</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;"><b>四、开标时间及地点</b></p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">1、开标时间：2019年10月23日上午9:00</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">2、开标地点：庐江县庐城镇晨光路17号东方水岸写字楼4楼1号开标室</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;"><b>五、投标截止时间</b></p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">2019年10月 23 日上午 9 :00</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;"><b>六、联系方法</b></p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">1、项目单位：庐江县重点工程建设管理中心</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">地址：合肥市庐江县庐城镇交通路23号</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">联系人：周工</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">电话：0551-882563663</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">2、招标代理机构：安徽建清工程咨询有限公司&nbsp;&nbsp;&nbsp;&nbsp;</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">地址：庐江县朱墩菜市场向南150米</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">联系人：王琴&nbsp;&nbsp;&nbsp; 电话：15255590400&nbsp;</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">3、安徽合肥公共资源交易中心网址：http:// ggzy.hefei.gov.cn/</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;"><b>七、其它事项说明</b></p> <p style="margin: 0cm 0cm 0pt; text-align: justify; text-indent: 21pt;">1、投标人如需开具标书工本费发票，在项目开标次日后自行登录安徽合肥公共资源电子交易平台打印。&nbsp; </p> <p style="margin: 0cm 0cm 0pt; text-align: justify; text-indent: 21pt;">2、有任何疑问或问题，请在工作时间（周一至周五，上午9:00-12:00，下午13:30-17:30，节假日休息）与项目联系人联系。</p> <p style="margin: 0cm 0cm 0pt; text-align: justify; text-indent: 21pt;">3、凡持各级建设行政主管部门颁发的《建筑业企业资质证书》参与合肥市招投标活动的安徽省外建筑业企业，须在安徽省按照主管部门相关要求办理信息登记手续。</p> <p style="margin: 0cm 0cm 0pt; text-align: justify;"><b>八、保证金账户：选择一家银行进行缴费（保证金开户名、开户行地址见招标文件）</b></p> 
+ <div align="center"> 
+  <table style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"> 
+   <tbody> 
+    <tr style="height: 19.85pt;"> 
+     <td width="229" style="padding: 0cm; border: 1pt solid windowtext; width: 171.45pt; height: 19.85pt; border-image: none;"> <p style="margin: 0cm 0cm 0pt; text-align: justify;">工商银行账号</p> </td> 
+     <td width="335" style="border-width: 1pt 1pt 1pt medium; border-style: solid solid solid none; border-color: windowtext windowtext windowtext currentColor; padding: 0cm; width: 250.9pt; height: 19.85pt; border-image: none;"> <p align="left" style="margin: 0cm 0cm 0pt; text-align: left;"><span style="color: rgb(51, 51, 51);">1302071038001328013</span></p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">&nbsp;</p> </td> 
+    </tr> 
+    <tr style="height: 21.85pt;"> 
+     <td width="229" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0cm; width: 171.45pt; height: 21.85pt; border-image: none;"> <p style="margin: 0cm 0cm 0pt; text-align: justify;">农业银行账号</p> </td> 
+     <td width="335" style="border-width: medium 1pt 1pt medium; border-style: none solid solid none; border-color: currentColor windowtext windowtext currentColor; padding: 0cm; width: 250.9pt; height: 21.85pt;"> <p align="left" style="margin: 0cm 0cm 0pt; text-align: left;"><span style="color: rgb(51, 51, 51);">121500010400206910000002135</span></p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">&nbsp;</p> </td> 
+    </tr> 
+    <tr style="height: 21.85pt;"> 
+     <td width="229" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0cm; width: 171.45pt; height: 21.85pt; border-image: none;"> <p style="margin: 0cm 0cm 0pt; text-align: justify;">建设银行账号</p> </td> 
+     <td width="335" style="border-width: medium 1pt 1pt medium; border-style: none solid solid none; border-color: currentColor windowtext windowtext currentColor; padding: 0cm; width: 250.9pt; height: 21.85pt;"> <p align="left" style="margin: 0cm 0cm 0pt; text-align: left;"><span style="color: rgb(51, 51, 51);">34001777309052502004-18814</span></p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">&nbsp;</p> </td> 
+    </tr> 
+    <tr style="height: 21.85pt;"> 
+     <td width="229" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0cm; width: 171.45pt; height: 21.85pt; border-image: none;"> <p style="margin: 0cm 0cm 0pt; text-align: justify;">杭州银行账号</p> </td> 
+     <td width="335" style="border-width: medium 1pt 1pt medium; border-style: none solid solid none; border-color: currentColor windowtext windowtext currentColor; padding: 0cm; width: 250.9pt; height: 21.85pt;"> <p align="left" style="margin: 0cm 0cm 0pt; text-align: left;"><span style="color: rgb(51, 51, 51);">3401040160000025727-012191</span></p> <p style="margin: 0cm 0cm 0pt; text-align: justify;">&nbsp;</p> </td> 
+    </tr> 
+    <tr style="height: 21.85pt;"> 
+     <td width="229" style="border-width: medium 1pt 1pt; border-style: none solid solid; border-color: currentColor windowtext windowtext; padding: 0cm; width: 171.45pt; height: 21.85pt; border-image: none;"> <p style="margin: 0cm 0cm 0pt; text-align: justify;">中国邮政储蓄银行股份有限公司庐江县支行</p> </td> 
+     <td width="335" style="border-width: medium 1pt 1pt medium; border-style: none solid solid none; border-color: currentColor windowtext windowtext currentColor; padding: 0cm; width: 250.9pt; height: 21.85pt;"> <p align="left" style="margin: 0cm 0cm 0pt; text-align: left;"><span style="color: rgb(51, 51, 51);">934003010018048899001973</span></p> <p style="margin: 0cm 0cm 0pt; text-align: justify; font-family: &quot;Times New Roman&quot;, serif;">&nbsp;</p> </td> 
+    </tr> 
+   </tbody> 
+  </table> 
+ </div> </h1> 
+<h1 align="center" style="text-align: center;"></h1></div>
+                                    <div class="preview_box">
+                                        <div class="file">
+                                            <span>附件:</span>
+                                            <br>
+                                             
+                                    <a href="/EpointWebBuilder/WebbuilderMIS/attach/downloadZtbAttach.jspx?attachGuid=8758cc55-b767-4055-97ab-9bd507692030&amp;appUrlFlag=HFZTB&amp;siteGuid=7eb5f7f1-9041-43ad-8e13-8fcb82ea831a" title="第1章招标公告.docx" class="ewb-enclosure">
+                                       第1章招标公告.docx</a>
+                                <br>
+                                        </div>
+                                    </div>
+                                </div>
+                    <!--endprint-->
+                    <div class="ewb-info-bd hidden" data-role="tab-content" data-id="tab-002001002">此流程暂无信息</div>
+                    <div class="ewb-info-bd hidden" data-role="tab-content" data-id="tab-002001003">
+                       
+                                   <div class="cont_hr"></div>
+                                   <input type="hidden" class="002001003infodate" value="2019-10-23 17:34">
+                                    <div class="ewb-info-main clearfix">
+                                        <p align="center" style="background: rgb(255, 255, 255); text-align: center; font-family: 宋体; margin-top: 0pt; margin-bottom: 0pt;"><b><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体; font-weight: bold;"><font face="宋体">庐江县常江人造板支路工程施工中标候选人公示</font></span></b></p> 
+<p align="justify" style="background: rgb(255, 255, 255); text-align: justify; font-family: 宋体; margin-top: 0pt; margin-bottom: 0pt;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">一、项目相关情况</font>&nbsp;</span></p> 
+<p align="justify" style="background: rgb(255, 255, 255); text-align: justify; font-family: 宋体; margin-top: 0pt; margin-bottom: 0pt;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">项目名称：庐江县常江人造板支路工程施工</font></span></p> 
+<p align="justify" style="background: rgb(255, 255, 255); text-align: justify; font-family: 宋体; margin-top: 0pt; margin-bottom: 0pt;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">项目编号：</font> 2019LJGZ1297 </span></p> 
+<p align="justify" style="background: rgb(255, 255, 255); text-align: justify; font-family: 宋体; margin-top: 0pt; margin-bottom: 0pt;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">招标（采购）方式：公开招标</font></span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">招标（采购）公告发布日期：</font>2019年10月1日&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">开标（采购）日期：</font>2019年10月23日&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">庐江县常江人造板支路工程施工施工中标候选人结果公示如下：</font></span></p> 
+<p align="justify" style="background: rgb(255, 255, 255); text-align: justify; font-family: 宋体; margin-top: 0pt; margin-bottom: 0pt;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">第一中标（成交）候选人名称：安徽龙蟠建设工程有限公司</font></span></p> 
+<p align="justify" style="background: rgb(255, 255, 255); text-align: justify; font-family: 宋体; margin-top: 0pt; margin-bottom: 0pt;">&nbsp;</p> 
+<p align="justify" style="background: rgb(255, 255, 255); text-align: justify; font-family: 宋体; margin-top: 0pt; margin-bottom: 0pt;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">地址：合肥市蜀山区金寨南路</font>811号安粮城市广场B区商业、办公楼及地下室办2506</span></p> 
+<p style="background: rgb(255, 255, 255); text-align: left; font-family: 宋体; margin-top: 5pt; margin-bottom: 5pt;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">投标报价：人民币叁佰万零叁拾肆元叁角伍分（￥</font>3000034.35元）</span></p> 
+<p style="background: rgb(255, 255, 255); text-align: left; font-family: 宋体; margin-top: 5pt; margin-bottom: 5pt;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">企业业绩：长丰县下塘镇交通街及新民街道排工程</font> </span></p> 
+<p style="background: rgb(255, 255, 255); text-align: left; font-family: 宋体; margin-top: 5pt; margin-bottom: 5pt;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">质量</font>:合格</span></p> 
+<p style="background: rgb(255, 255, 255); text-align: left; font-family: 宋体; margin-top: 5pt; margin-bottom: 5pt;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">工期</font>:</span><span style="font-family: 宋体;">210</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">个日历天</font></span></p> 
+<p style="background: rgb(255, 255, 255); text-align: left; font-family: 宋体; margin-top: 0pt; margin-bottom: 0pt;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">第二中标（成交）候选人名称：安徽弘森市政工程有限公司</font> </span></p> 
+<p style="background: rgb(255, 255, 255); text-align: left; font-family: 宋体; margin-top: 0pt; margin-bottom: 0pt;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">地址：庐江县石头镇石头街道汝昌路</font></span></p> 
+<p align="justify" style="background: rgb(255, 255, 255); text-align: justify; font-family: 宋体; margin-top: 0pt; margin-bottom: 0pt;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">投标报价：人民币叁佰零壹万捌仟零叁拾元壹角柒分（￥</font>3018030.17元）</span></p> 
+<p style="background: rgb(255, 255, 255); text-align: left; font-family: 宋体; margin-top: 5pt; margin-bottom: 5pt;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">企业业绩</font>:庐江县庐城镇马厂中心村美好乡村建设工程施工</span></p> 
+<p style="background: rgb(255, 255, 255); text-align: left; font-family: 宋体; margin-top: 5pt; margin-bottom: 5pt;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">质量：合格</font></span></p> 
+<p align="justify" style="background: rgb(255, 255, 255); text-align: justify; font-family: 宋体; margin-top: 0pt; margin-bottom: 0pt;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">工期：</font>210个日历天</span></p> 
+<p style="margin: 0pt; text-align: justify; font-family: &quot;Times New Roman&quot;;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">主要中标或者成交标的的名称、规格型号、数量、单价、服务要求：</font>&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">评标委员会成员名单：</font></span><span style="font-family: 宋体;"><font face="宋体">陈琦</font></span><span style="font-family: 宋体;"><font face="宋体">、</font></span><span style="font-family: 宋体;"><font face="宋体">李琼</font></span><span style="font-family: 宋体;"><font face="宋体">、</font></span><span style="font-family: 宋体;"><font face="宋体">王源容</font></span><span style="font-family: 宋体;"><font face="宋体">、</font></span><span style="font-family: 宋体;"><font face="宋体">宣仲磊</font></span><span style="font-family: 宋体;"><font face="宋体">、</font></span><span style="font-family: 宋体;"><font face="宋体">张振东</font></span></p> 
+<p style="background: rgb(255, 255, 255); text-align: left; text-indent: 12pt; font-family: 宋体; margin-top: 0pt; margin-bottom: 0pt;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">招标（采购）人名称：庐江县重点工程建设管理中心</font></span></p> 
+<p style="background: rgb(255, 255, 255); text-align: left; font-family: 宋体; margin-top: 0pt; margin-bottom: 0pt;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">地址：合肥市庐江县庐城镇交通路</font>23号</span></p> 
+<p style="background: rgb(255, 255, 255); text-align: left; font-family: 宋体; margin-top: 0pt; margin-bottom: 0pt;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">联系人：周建</font></span></p> 
+<p style="background: rgb(255, 255, 255); text-align: left; font-family: 宋体; margin-top: 0pt; margin-bottom: 0pt;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">联系方式：</font> </span><span style="font-family: 宋体;">0551-882563663</span></p> 
+<p style="background: rgb(255, 255, 255); text-align: left; font-family: 宋体; margin-top: 0pt; margin-bottom: 0pt;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">招标代理机构名称：安徽建清工程咨询有限公司</font> &nbsp;<font face="宋体">地址：庐江县朱墩菜市场向南</font>150米&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">项目负责人：王琴</font> &nbsp;&nbsp; 联系电话：1525590400</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); font-family: 宋体;"><font face="宋体">公示期：</font>2019年</span><span style="background: rgb(255, 255, 255); font-family: 宋体;">10</span><span style="background: rgb(255, 255, 255); font-family: 宋体;"><font face="宋体">月</font></span><span style="background: rgb(255, 255, 255); font-family: 宋体;">23</span><span style="background: rgb(255, 255, 255); font-family: 宋体;"><font face="宋体">日至</font>2019年</span><span style="background: rgb(255, 255, 255); font-family: 宋体;">10</span><span style="background: rgb(255, 255, 255); font-family: 宋体;"><font face="宋体">月</font></span><span style="background: rgb(255, 255, 255); font-family: 宋体;">2</span><span style="background: rgb(255, 255, 255); font-family: 宋体;">5日&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(255, 0, 0); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">若投标人对上述结果有异议，可在公示期内以书面形式在工作时间（周一至周五，上午</font>8:00-11:30，下午2:30-5:30，节假日休息）向招标人或代理机构提出质疑，质疑函中应明确提出自身权益受到损害的事实与理由。</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">若投标人对异议处理意见有异议，可在规定时间内以书面形式向庐江县发展和改革委员会公共资源交易监督管理办公室提出投诉，联系人：黄工，联系电话：</font>0551-87377717【项目地点在合肥行政区域以外的项目：向项目所在地招标投标监督管理部门（公共资源交易监督管理部门）提出投诉】。</span></p> 
+<p style="background: rgb(255, 255, 255); text-align: left; font-family: 宋体; margin-top: 0pt; margin-bottom: 0pt;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">二、异议提起的条件及不予受理的情形</font>&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">根据《中华人民共和国招投标法》、《中华人民共和国招标投标法实施条例》等法律法规，现将异议提起的条件及不予受理的情形告知如下：</font>&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">（一）异议应以书面形式实名提出，书面异议材料应当包括以下内容：</font>&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;">1、异议人的名称、地址、有效联系方式；&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;">2、项目名称、项目编号、标段号（如有）；&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;">3、被异议人名称；&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;">4、具体的异议事项、基本事实及必要的证明材料；&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;">5、明确的请求及主张；&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;">6、提起异议的日期。&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">异议人为法人或者其他组织的，应当由法定代表人或其委托代理人（需有委托授权书）签字并加盖公章。</font>&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">异议人需要修改、补充异议材料的，应当在异议期内提交修改或补充材料。</font>&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">（二）有下列情形之一的，不予受理：</font>&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;">1、提起异议的主体不是所异议项目投标人的；&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;">2、提起异议的时间超过规定时限的；&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;">3、异议材料不完整的；&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;">4、异议事项含有主观猜测等内容且未提供有效线索、难以查证的；&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;">5、对其他投标人的投标文件详细内容异议，无法提供合法来源渠道的；&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;">6、异议事项已进入投诉处理、行政复议或行政诉讼程序的。&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">特此公告。</font>&nbsp;</span></p> 
+<p align="justify" style="background: rgb(255, 255, 255); text-align: justify; text-indent: 396pt; font-family: 宋体; margin-top: 0pt; margin-bottom: 0pt; margin-left: 45pt;">&nbsp;</p> 
+<p style="margin: 0pt; text-align: justify; font-family: &quot;Times New Roman&quot;;"><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><font face="宋体">安徽建清工程咨询有限公司</font></span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;">&nbsp;</span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019<font face="宋体">年</font><font face="Times New Roman">10</font><font face="宋体">月</font><font face="Times New Roman">23</font><font face="宋体">日</font><font face="Times New Roman">&nbsp;</font></span><span style="background: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: 宋体;"><br> </span></p></div>
+                                <div class="preview_box"><div class="file"><span>附件:</span><br> 
+                                        <a href="/EpointWebBuilder/WebbuilderMIS/attach/downloadZtbAttach.jspx?attachGuid=013ac982-0684-4a3c-b426-2b0d97251054&amp;appUrlFlag=HFZTB&amp;siteGuid=7eb5f7f1-9041-43ad-8e13-8fcb82ea831a" title="评标情况一览表(1).xlsx" class="ewb-enclosure">
+                                           评标情况一览表(1).xlsx</a>
+                                     
+                                        <a href="/EpointWebBuilder/WebbuilderMIS/attach/downloadZtbAttach.jspx?attachGuid=9fa3bbb7-d500-4023-96ff-53076a71e9c4&amp;appUrlFlag=HFZTB&amp;siteGuid=7eb5f7f1-9041-43ad-8e13-8fcb82ea831a" title="中标候选人信息表.docx" class="ewb-enclosure">
+                                           中标候选人信息表.docx</a>
+                                     
+                                        <a href="/EpointWebBuilder/WebbuilderMIS/attach/downloadZtbAttach.jspx?attachGuid=b990035b-372b-430b-80c1-9a1c1fa24fc4&amp;appUrlFlag=HFZTB&amp;siteGuid=7eb5f7f1-9041-43ad-8e13-8fcb82ea831a" title="中标候选人公示.docx" class="ewb-enclosure">
+                                           中标候选人公示.docx</a>
+                                    <br></div></div>
+                                </div>
+                    <div class="ewb-info-bd" data-role="tab-content" data-id="tab-002001004">
+                       
+                                   <div class="cont_hr"></div>
+                                   <input type="hidden" class="002001004infodate" value="2019-11-01 20:13">
+                                    <div class="ewb-info-main clearfix">
+                                        <p align="center" style="background: white; margin: 0cm 0cm 0pt; text-align: center; font-family: 宋体;"><font face="黑体"><font face="黑体"><strong><span style="color: rgb(78, 78, 78); font-family: 方正小标宋简体;">安徽省肿瘤医院（安徽省立医院西区）二期工程施工项目中标结果公示</span><span style="color: rgb(78, 78, 78); font-family: 方正小标宋简体;"></span></strong></font></font></p>
+<p style="background: white; margin: 0cm 0cm 0pt; text-indent: 12.8pt;"><font face="仿宋,仿宋_GB2312"><span><strong>&nbsp;&nbsp;&nbsp;&nbsp; </strong><font face="仿宋,仿宋_GB2312"><span style="">安徽省肿瘤医院（安徽省立医院西区）二期路工程施工项目中标结果公示</span></font><font face="仿宋,仿宋_GB2312"><span style="">项目</span></font></span><span style="color: rgb(51, 51, 51);">评标工作已经结束，中标人已经确定。现将中标结果公示如下：</span></font></p>
+
+<font face="仿宋,仿宋_GB2312">
+</font>
+<p style="background: white; margin: 0cm 0cm 0pt;"><font face="仿宋,仿宋_GB2312"><span style="color: rgb(51, 51, 51);"><span style=""><span style=""><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span></span><span style="color: rgb(51, 51, 51);">中标（成交）单位名称</span><span style="color: rgb(51, 51, 51);">:</span><span style=""><span style=""><span style="">&nbsp;辽宁宏泰工程有限公司</span></span></span></font></p>
+<font face="仿宋,仿宋_GB2312">
+</font>
+<p style="background: white; margin: 0cm 0cm 0pt;"><font face="仿宋,仿宋_GB2312"><span style="color: rgb(51, 51, 51);"><span style=""><span style=""><span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span></span><span style="color: rgb(51, 51, 51);">人民币  叁仟贰佰伍拾叁万柒仟壹佰肆拾捌元捌角整（￥32537148.80元）</span></font></p>
+<p style="background: white; margin: 0cm 0cm 0pt;"><font face="仿宋,仿宋_GB2312"><span style="color: rgb(51, 51, 51);"><br>
+</span></font></p>
+<p align="right" style="background: white; margin: 0cm 0cm 0pt; text-align: right; font-family: 宋体;"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=""><font face="仿宋,仿宋_GB2312"><span style="">公示日期：201</span></font></span></span><span style="color: rgb(51, 51, 51);"><font face="仿宋,仿宋_GB2312">8</font></span><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, sans-serif;"><span style=""><font face="仿宋,仿宋_GB2312"><span style="">年</span></font></span></span><span style="color: rgb(51, 51, 51);"><font face="仿宋,仿宋_GB2312">6</font></span><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, sans-serif;"><span style=""><font face="仿宋,仿宋_GB2312"><span style="">月</span></font></span></span><span style="color: rgb(51, 51, 51);"><font face="仿宋,仿宋_GB2312">13</font></span><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, sans-serif;"><span style=""><font face="仿宋,仿宋_GB2312"><span style="">日</span></font></span></span></p>
+<p style="margin: 0cm 0cm 0pt; text-align: justify; font-family: 等线;">&nbsp;</p></div><div class="preview_box"><div class="file"><span>附件:无</span><br><br></div></div>
+                                </div>
+                    <div class="ewb-info-bd hidden" data-role="tab-content" data-id="tab-002001005">此流程暂无信息</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+     <!-- footer -->
+    <div id="footer"><!-- footer -->
+<!-- 链接 -->
+<div class="ewb-container">
+        <div class="tabview ewb-link">
+            <div class="ewb-link-hd l" data-role="head">
+                <ul>
+                    <!-- 网站联盟 -->
+                    
+                                <li style="cursor: default;" class="ewb-link-tab current" data-role="tab" data-target="tabb">网站联盟</li>
+                            </ul>
+            </div>
+            <div class="ewb-link-bd scroll l">
+                <div class="wb-marquee" id="marquee-wrap2" style="overflow: hidden; width: 1045px; height: 62px; position: relative;">
+                    <ul class="ewb-link-item wb-marquee-items clearfix" id="scroll-container" style="padding: 0px; border: 0px; display: inline-block; margin: 0px; list-style: none; width: 3344px; height: 62px;">
+                         
+                                    <li class="ewb-link-list l" style="list-style: none; margin-left: 0px; margin-right: 10px; border-left-width: 0px; border-right-width: 0px; float: left; display: inline;">
+                                        <a onClick="winopen('http://ggzy.hefei.gov.cn/hftd/')" style="cursor:pointer;" target="_blank"><img src="images/8b059657-661e-4627-a5e5-717caadcfd84199_62.jpg"></a>
+                                    </li>
+                                
+                                    <li class="ewb-link-list l" style="list-style: none; margin-left: 0px; margin-right: 10px; border-left-width: 0px; border-right-width: 0px; float: left; display: inline;">
+                                        <a onClick="winopen('http://www.huiemall.com')" style="cursor:pointer;" target="_blank"><img src="images/f99cf508-ff6e-4a6f-9474-7934b3be9fe4199_62.jpg"></a>
+                                    </li>
+                                
+                                    <li class="ewb-link-list l" style="list-style: none; margin-left: 0px; margin-right: 10px; border-left-width: 0px; border-right-width: 0px; float: left; display: inline;">
+                                        <a onClick="winopen('http://ggzy.hefei.gov.cn/cjzyss.html')" style="cursor:pointer;" target="_blank"><img src="images/96395712-0723-477a-aefa-39062e223cb1199_62.jpg"></a>
+                                    </li>
+                                
+                                    <li class="ewb-link-list l" style="list-style: none; margin-left: 0px; margin-right: 10px; border-left-width: 0px; border-right-width: 0px; float: left; display: inline;">
+                                        <a onClick="winopen('http://www.ahggzyjt.com/hfjt/')" style="cursor:pointer;" target="_blank"><img src="images/d436695f-cc49-4f44-8405-1fdc4e1a98bd199_62.jpg"></a>
+                                    </li>
+                                
+                                    <li class="ewb-link-list l" style="list-style: none; margin-left: 0px; margin-right: 10px; border-left-width: 0px; border-right-width: 0px; float: left; display: inline;">
+                                        <a onClick="winopen('http://www.ahaee.com/')" style="cursor:pointer;" target="_blank"><img src="images/e4abccb8-f037-40bc-89cf-93e53e81dbbc199_62.jpg"></a>
+                                    </li>
+                                
+                                    <li class="ewb-link-list l" style="list-style: none; margin-left: 0px; margin-right: 10px; border-left-width: 0px; border-right-width: 0px; float: left; display: inline;">
+                                        <a onClick="winopen('http://www.ahcaee.com/')" style="cursor:pointer;" target="_blank"><img src="images/9f4688c1-77e1-4be4-b3f9-80cbcd13e898199_62.jpg"></a>
+                                    </li>
+                                
+                                    <li class="ewb-link-list l" style="list-style: none; margin-left: 0px; margin-right: 10px; border-left-width: 0px; border-right-width: 0px; float: left; display: inline;">
+                                        <a onClick="winopen('http://www.ahtre.com/')" style="cursor:pointer;" target="_blank"><img src="images/9651c2d4-fdcd-4d18-84fd-3ec0342fe20c199_62.jpg"></a>
+                                    </li>
+                                
+                                    <li class="ewb-link-list l" style="list-style: none; margin-left: 0px; margin-right: 10px; border-left-width: 0px; border-right-width: 0px; float: left; display: inline;">
+                                        <a onClick="winopen('http://www.ahyycg.cn/')" style="cursor:pointer;" target="_blank"><img src="images/560adf4f-11be-4ff3-9aea-6a92961dd787199_62.jpg"></a>
+                                    </li>
+                                
+                         
+                                    <li class="ewb-link-list l" style="list-style: none; margin-left: 0px; margin-right: 10px; border-left-width: 0px; border-right-width: 0px; float: left; display: inline;">
+                                        <a onClick="winopen('http://ggzy.hefei.gov.cn/hftd/')" style="cursor:pointer;" target="_blank"><img src="images/8b059657-661e-4627-a5e5-717caadcfd84199_62.jpg"></a>
+                                    </li>
+                                
+                                    <li class="ewb-link-list l" style="list-style: none; margin-left: 0px; margin-right: 10px; border-left-width: 0px; border-right-width: 0px; float: left; display: inline;">
+                                        <a onClick="winopen('http://www.huiemall.com')" style="cursor:pointer;" target="_blank"><img src="images/f99cf508-ff6e-4a6f-9474-7934b3be9fe4199_62.jpg"></a>
+                                    </li>
+                                
+                                    <li class="ewb-link-list l" style="list-style: none; margin-left: 0px; margin-right: 10px; border-left-width: 0px; border-right-width: 0px; float: left; display: inline;">
+                                        <a onClick="winopen('http://ggzy.hefei.gov.cn/cjzyss.html')" style="cursor:pointer;" target="_blank"><img src="images/96395712-0723-477a-aefa-39062e223cb1199_62.jpg"></a>
+                                    </li>
+                                
+                                    <li class="ewb-link-list l" style="list-style: none; margin-left: 0px; margin-right: 10px; border-left-width: 0px; border-right-width: 0px; float: left; display: inline;">
+                                        <a onClick="winopen('http://www.ahggzyjt.com/hfjt/')" style="cursor:pointer;" target="_blank"><img src="images/d436695f-cc49-4f44-8405-1fdc4e1a98bd199_62.jpg"></a>
+                                    </li>
+                                
+                                    <li class="ewb-link-list l" style="list-style: none; margin-left: 0px; margin-right: 10px; border-left-width: 0px; border-right-width: 0px; float: left; display: inline;">
+                                        <a onClick="winopen('http://www.ahaee.com/')" style="cursor:pointer;" target="_blank"><img src="images/e4abccb8-f037-40bc-89cf-93e53e81dbbc199_62.jpg"></a>
+                                    </li>
+                                
+                                    <li class="ewb-link-list l" style="list-style: none; margin-left: 0px; margin-right: 10px; border-left-width: 0px; border-right-width: 0px; float: left; display: inline;">
+                                        <a onClick="winopen('http://www.ahcaee.com/')" style="cursor:pointer;" target="_blank"><img src="images/9f4688c1-77e1-4be4-b3f9-80cbcd13e898199_62.jpg"></a>
+                                    </li>
+                                
+                                    <li class="ewb-link-list l" style="list-style: none; margin-left: 0px; margin-right: 10px; border-left-width: 0px; border-right-width: 0px; float: left; display: inline;">
+                                        <a onClick="winopen('http://www.ahtre.com/')" style="cursor:pointer;" target="_blank"><img src="images/9651c2d4-fdcd-4d18-84fd-3ec0342fe20c199_62.jpg"></a>
+                                    </li>
+                                
+                                    <li class="ewb-link-list l" style="list-style: none; margin-left: 0px; margin-right: 10px; border-left-width: 0px; border-right-width: 0px; float: left; display: inline;">
+                                        <a onClick="winopen('http://www.ahyycg.cn/')" style="cursor:pointer;" target="_blank"><img src="images/560adf4f-11be-4ff3-9aea-6a92961dd787199_62.jpg"></a>
+                                    </li>
+                                </ul>
+                </div>
+            </div>
+        </div>
+</div>
+<div class="ewb-footer">
+    <div class="ewb-container">
+        <div style="float:left">
+            <p>网站访问量：<span id="siteViewCount" class="ewb-footer-fwl"><img src="images/counter/4.gif"><img src="images/counter/7.gif"><img src="images/counter/6.gif"><img src="images/counter/8.gif"><img src="images/counter/3.gif"><img src="images/counter/8.gif"><img src="images/counter/4.gif"><img src="images/counter/3.gif"><img src="images/counter/7.gif"></span>   今日访问量：<span id="siteTodayCount" class="ewb-footer-fwl"><img src="images/counter/2.gif"><img src="images/counter/3.gif"><img src="images/counter/0.gif"><img src="images/counter/3.gif"><img src="images/counter/3.gif"></span>        昨日访问量：<span id="siteYesCount" class="ewb-footer-fwl"><img src="images/counter/2.gif"><img src="images/counter/0.gif"><img src="images/counter/4.gif"><img src="images/counter/2.gif"><img src="images/counter/3.gif"><img src="images/counter/0.gif"></span>
+            
+             </p>
+            <p>安徽合肥公共资源交易中心 主办</p>
+            <p><a href="http://www.beian.miit.gov.cn" target="_blank" style="color:#fff">皖ICP备12008608号-3</a>     网站标识码：3401000122</p>
+            <p><img src="images/beian.png"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34011102000915" target="_blank" style="color: #fff;">皖公网安备：34011102000915号</a></p>
+        </div>
+        <div style="position:relative;margin-left: 524px;">
+            <!--网站地图-->
+                 <a href="/wzdt/map.html" target="_blank" style="color: #fff;position: absolute;top: 7px;left: -22px;">网站地图及使用帮助</a><!--联系我们-->
+                 <a href="/ptdt/001006/001006001/tradeCenter.html" target="_blank" style="color: #fff;position: absolute;top: 7px;left: 118px;">联系我们：0551-68110066</a><!--隐私申明-->
+                  <a href="/ptdt/001003/20171128/cf7daca6-543b-41f8-ace9-9fa9fbc5fc6f.html" target="_blank" style="color: #fff;position: absolute;top: 7px;left: 320px;">隐私申明</a><span id="_span_jiucuo" style="position: absolute;top: 40px;left: 30px;"><img onClick="Link('3401000122')" style="margin:0;border:0;cursor: pointer;" src="images/error_img.png?v=3401000122"></span>
+            <script id="_jiucuo_" sitecode="3401000122" src="js/jiucuo.js">
+                
+            </script>
+            <a href="http://bszs.conac.cn/sitename?method=show&amp;id=0BDE46CFC7852422E053022819AC56BC" style="position: absolute;top: 40px;left: 210px;" target="_blank"><img alt="" src="images/foot_icon.png"></a>
+        </div>
+        <div class="ewb-footer-link r">
+            <!--友情链接-->
+            <span class="l">友情链接</span><select class="ewb-sel l" onChange="winurl(this.options[this.selectedIndex].value)">
+                 
+                <option value="">---网站友情链接---</option><option value="">---综合网站---</option>
+                            <option value="http://www.ah.gov.cn/">安徽省人民政府</option>
+                        
+                            <option value="http://www.hefei.gov.cn/">中国合肥</option>
+                        
+                            <option value="http://ggzy.ah.gov.cn">安徽省公共资源交易监管网</option>
+                        
+                            <option value="http://www.hefeihgx.cn">合肥公共资源交易管理协会</option>
+                        <option value="">---交易信息归档网---</option><option value="">---工程建设专业网---</option>
+                            <option value="http://lyj.ah.gov.cn/">安徽省林业局</option>
+                        
+                            <option value="http://slt.ah.gov.cn/">安徽省水利厅</option>
+                        
+                            <option value="http://jtt.ah.gov.cn/">安徽省交通运输厅</option>
+                        
+                            <option value="http://dohurd.ah.gov.cn/ahzjt_front/">安徽省住房和城乡建设厅</option>
+                        
+                            <option value="http://www.zbwmy.com/">中国建设工程招标网</option>
+                        
+                            <option value="http://www.mohurd.gov.cn/">中华人民共和国住房和城乡建设部</option>
+                        <option value="">---政府采购专业网---</option>
+                            <option value="http://www.ggzy2015.com/">公共资源网</option>
+                        
+                            <option value="http://www.caigou2003.com/">政府采购信息网</option>
+                        
+                            <option value="http://hfcz.hefei.gov.cn/">合肥市财政局</option>
+                        
+                            <option value="http://www.ccgp-anhui.gov.cn/">安徽省政府采购网</option>
+                        
+                            <option value="http://czt.ah.gov.cn/portal/index.htm">安徽省财政厅</option>
+                        
+                            <option value="http://www.ccgp.gov.cn/">中国政府采购网</option>
+                        
+                            <option value="http://www.mof.gov.cn/index.htm">中华人民共和国财政部</option>
+                        </select>
+        </div>
+    </div>
+</div>
+<script src="js/lib/tabview.js"></script>
+<script src="js/lib/MSClass.js"></script>
+<script src="js/common2.js"></script>
+
+<script>
+ function winopen(url){
+     if(url.indexOf("ggzy.hefei.gov.cn")==-1&&url!="http://www.huiemall.com"){
+         if(confirm("您访问的链接即将离开“安徽合肥公共资源交易中心”门户网站，将访问外部链接地址为“"+url+"”，是否继续？")){
+            window.open(url);
+         }
+     }else{
+        window.open(url);
+     }
+ }
+</script>
+
+<script>
+ function winurl(url){
+     if(url != ''){
+        if(url=='http://www.ahggzy.gov.cn/'||url=='http://www.hefeihgx.cn'||url=='http://www.ggzy2015.com/'||url=='http://www.caigou2003.com/'){
+            if(confirm('您访问的链接即将离开“安徽合肥公共资源交易中心”门户网站，将访问外部链接地址为“'+url+'”，是否继续？')){
+                window.open(url,'_blank');
+            }    
+         }else{
+            window.open(url,'_blank');
+         }
+     } 
+ }
+</script>
+</div>
+    <script type="text/javascript">
+    var headerSrc = $("#footer a").attr("href");
+    $("#footer").load(headerSrc);
+    </script>
+    <!-- 页面脚本 -->
+    <script src="js/detail.js"></script>
+    <script src="js/lib/hfcommon.js"></script>
+    <script src="js/lib/jquery.placeholder.min.js"></script>
+    <script src="js/ServiceUtil.js"></script>
+    <script src="js/webBuilderCommon.js"></script>
+    <script src="js/MypageView.js"></script>
+    <script src="js/subcommon.js"></script>
+    <script src="js/lib/tabview.js"></script>
+    <script src="js/noticeDetails1.js"></script>
+</div>
+
+
+</body></html>
